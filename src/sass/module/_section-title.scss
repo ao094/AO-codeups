@@ -1,0 +1,32 @@
+@use "global"as *;
+
+.section-title {
+  text-align: center;
+  color: $white;
+  font-weight: $regular;
+  font-size: rem(20);
+  letter-spacing: 0.1em;
+  line-height: 1;
+
+  @include mq(md) {
+    font-size: rem(30);
+    font-weight: $regular;
+    letter-spacing: 0.06666667em;
+  }
+}
+
+.section-subtitle {
+  color: rgba($color: $yellow, $alpha: .27);
+  font-family: $english-font-family;
+  font-weight: $regular;
+  text-transform: capitalize;
+  font-size: rem(50);
+  letter-spacing: 0.04em;
+  line-height: 1;
+
+  @include mq(md) {
+    font-size: rem(110);
+    letter-spacing: 0.01818182em;
+    line-height: calc(158 / 110);
+  }
+}

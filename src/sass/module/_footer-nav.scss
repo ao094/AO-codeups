@@ -1,0 +1,24 @@
+@use 'global' as *;
+
+.footer-nav {
+  text-align: center;
+  margin-top: rem(8);
+}
+
+.footer-nav__items {
+  display: inline-grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: rem(8);
+  // display: flex;
+  // flex-wrap: wrap;
+}
+
+.footer-nav__item a {
+  display: block;
+  width: 100%;
+  color: $white;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1.25;
+  letter-spacing: 0.075em;
+}

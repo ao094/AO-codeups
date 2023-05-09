@@ -1,0 +1,30 @@
+@use 'global' as *;
+
+.footer {
+  background-color: $black;
+}
+
+.footer__layout {
+  padding-top: rem(48);
+  padding-bottom: rem(48);
+}
+
+.footer__inner {
+  padding: 0 rem(120);
+  margin: auto;
+}
+
+.footer__logo {
+  width: rem(70);
+  // position: relative;
+}
+
+.footer__copyright {
+  text-align: center;
+  margin-top: rem(32);
+  color: $white;
+  font-size: rem(11);
+  font-weight: $regular;
+  line-height: 1;
+  letter-spacing: 0.10909091em;
+}

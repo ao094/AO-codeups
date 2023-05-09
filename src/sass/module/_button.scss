@@ -1,0 +1,28 @@
+@use "global" as *;
+
+
+.testBlock {
+  background-color: $black;
+  text-align: center;
+  padding-bottom: rem(50);
+}
+
+.button {
+  margin-top: rem(50);
+  text-align: center;
+  display: inline-block;
+  font-size: rem(20);
+  font-weight: $regular;
+  color: $white;
+  width: rem(335);
+  text-transform: uppercase;
+  border: 1px solid $white;
+  background: $black2;
+  line-height: 1;
+  padding: rem(10) 0;
+  @include mq(md){
+    width: rem(360);
+    padding: rem(19) 0;
+  }
+
+}
