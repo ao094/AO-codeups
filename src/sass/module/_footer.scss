@@ -1,4 +1,4 @@
-@use 'global' as *;
+@use 'global'as *;
 
 .footer {
   background-color: $black;
@@ -7,16 +7,35 @@
 .footer__layout {
   padding-top: rem(48);
   padding-bottom: rem(48);
+
+  @include mq(md) {
+    padding-top: rem(32);
+    padding-bottom: rem(16);
+  }
+
 }
 
 .footer__inner {
   padding: 0 rem(120);
   margin: auto;
+  
+  @include mq(md) {
+    padding: 0 rem(32);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+  }
+
 }
 
 .footer__logo {
   width: rem(70);
+  margin: 0 auto;
   // position: relative;
+  @include mq(md) {
+    margin: 0;
+  }
+
 }
 
 .footer__copyright {
@@ -27,4 +46,8 @@
   font-weight: $regular;
   line-height: 1;
   letter-spacing: 0.10909091em;
+  @include mq(md) {
+    margin-top: rem(75);
+  }
+
 }
