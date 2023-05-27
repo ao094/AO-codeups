@@ -6,11 +6,13 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
 }
 
 .header {
   background-color: rgba($color: $black, $alpha: .5);
   height: rem(50);
+  width: 100vw;
 }
 
 .header__inner {

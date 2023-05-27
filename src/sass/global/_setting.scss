@@ -43,6 +43,11 @@ $yellow2: #FFEA2E;// ホバー下線、ブログカテゴリ
 $orange: #FFBA6A;//ブログnew
 $bg-gray: #3D3D3D;
 
+body {
+  background-color: $black;
+
+}
+
 ////////////////////
 // メディアクエリとブレークポイントの設定
 ////////////////////

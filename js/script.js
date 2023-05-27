@@ -57,4 +57,34 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
+
+  // ズームインしながらスライダー
+  let swipeOption = {
+    loop: true,
+    effect: 'fade',
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    speed: 2000,
+    // pagination: {
+    //   el: '.swiper-pagination',
+    //   clickable: true,
+    // }
+  }
+  new Swiper('.js-mainViewSwiper', swipeOption);
+  // let swiper1 = new Swiper('.js-mainViewSwiper', swipeOption);
+
+
+      //Worksスライダー
+      var swiper = new Swiper (".js-topWorksSwiper", {
+        effect: 'slide',
+        loop: true,
+        direction: 'horizontal',
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
 });

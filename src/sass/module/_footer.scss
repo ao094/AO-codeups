@@ -6,7 +6,7 @@
 
 .footer__layout {
   padding-top: rem(48);
-  padding-bottom: rem(48);
+  padding-bottom: rem(70);
 
   @include mq(md) {
     padding-top: rem(32);
@@ -47,7 +47,9 @@
   line-height: 1;
   letter-spacing: 0.10909091em;
   @include mq(md) {
-    margin-top: rem(75);
+    margin-top: rem(83);
+    font-size: rem(15);
+    letter-spacing: 0.18em;
   }
 
 }

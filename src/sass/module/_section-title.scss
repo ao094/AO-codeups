@@ -7,15 +7,22 @@
   font-size: rem(20);
   letter-spacing: 0.1em;
   line-height: 1;
+  position: relative;
 
   @include mq(md) {
     font-size: rem(30);
     font-weight: $regular;
-    letter-spacing: 0.06666667em;
+    letter-spacing: 0.01em;
   }
 }
 
+.section-title__position {
+  position: relative;
+  margin-bottom: rem(48);
+}
+
 .section-subtitle {
+  display: block;
   color: rgba($color: $yellow, $alpha: .27);
   font-family: $english-font-family;
   font-weight: $regular;
@@ -28,5 +35,30 @@
     font-size: rem(110);
     letter-spacing: 0.01818182em;
     line-height: calc(158 / 110);
+  }
+}
+
+.section-subtitle__position {
+  position: absolute;
+  top: -209%;
+  left: 20%;
+  z-index: -2;
+
+  @include mq(md) {
+    top: -158%;
+    left: 0;
+
+  }
+}
+
+.section-subtitle__position--reverse {
+  position: absolute;
+  top: -214%;
+  left: 28.5%;
+  z-index: -2;
+  @include mq(md) {
+    top: -184%;
+    left: 66%;
+
   }
 }

@@ -1,0 +1,67 @@
+@use 'global'as *;
+
+.top-contact {
+  background-color: $bg-gray;
+}
+
+.top-contact__layout {
+  margin-top: rem(120);
+  padding-top: rem(72);
+  padding-bottom: rem(66);
+  @include mq(md) {
+    margin-top: rem(151);
+    padding-top: rem(150);
+    padding-bottom: rem(150);
+  }
+}
+
+.section-title__position--contact {
+  letter-spacing: 0.07em;
+  margin-bottom: rem(20);
+  @include mq(md) {
+    margin-bottom: rem(24);
+
+  }
+}
+
+.section-subtitle__position--contact {
+  z-index: 999;
+  left: 24%;
+  letter-spacing: 0.025em;
+  @include mq(md) {
+    top: -313%;
+    left: 7%;
+
+  }
+}
+
+.top-contact__text-box {
+  @include mq(md) {
+    text-align: center;
+
+  }
+}
+
+.top-contact__text {
+  color: $white;
+  font-size: rem(16);
+  line-height: 1.5;
+  letter-spacing: 0.125em;
+}
+
+.top-contact__button {
+  margin-top: rem(50);
+  text-align: center;
+  @include mq(md) {
+    margin-top: rem(60);
+
+  }
+}
+
+.top-contact__button .button {
+  font-size: rem(16);
+  letter-spacing: 0.125em;
+  @include mq(md) {
+
+  }
+}

@@ -1,0 +1,46 @@
+@use 'global'as *;
+
+.mainView {
+  position: relative;
+}
+
+.mainView__titles {
+  position: absolute;
+  top: 45%;
+  // transform: translateY(-50%);
+  color: white;
+  text-align: center;
+  width: 100%;
+  background: transparent;
+  z-index: 10;
+}
+
+.mainView__mainTitle,
+.mainView__subTitle {
+  display: block;
+}
+
+.mainView__mainTitle {
+  font-size: rem(28);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0.01785714em;
+
+  @include mq(md) {
+    font-size: rem(50);
+    line-height: 0.7;
+  }
+}
+
+.mainView__subTitle {
+  margin-top: rem(24);
+  font-size: rem(20);
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0.025em;
+
+  @include mq(md) {
+    font-size: rem(25);
+    line-height: 1.5;
+  }
+}
