@@ -945,6 +945,30 @@ select::-ms-expand {
   font-size: 1rem;
   letter-spacing: 0.125em;
 }
+.top-content {
+  position: relative;
+}
+
+.top-content::before {
+  position: absolute;
+  z-index: -999;
+  content: "";
+  background-image: linear-gradient(to right top, transparent 49.95%, #F9F871 50%, #F9F871 calc(50.05% + 1px), transparent calc(50.1% + 1px));
+  width: 100%;
+  height: 678px;
+  height: 42.375rem;
+  top: 122px;
+  top: 7.625rem;
+}
+@media screen and (min-width: 768px) {
+  .top-content::before {
+    width: 94.6875%;
+    height: 75.75rem;
+    top: 5.3125rem;
+    left: 0;
+  }
+}
+
 .top-content__layout {
   padding-top: 155px;
   padding-top: 9.6875rem;
@@ -1159,6 +1183,32 @@ select::-ms-expand {
     padding: 0.3125rem 1.6875rem;
     white-space: nowrap;
     letter-spacing: 0.04em;
+  }
+}
+
+.top-overview {
+  position: relative;
+}
+
+.top-overview::before {
+  position: absolute;
+  z-index: -999;
+  content: "";
+  background-image: linear-gradient(to left top, transparent 49.95%, #F9F871 50%, #F9F871 calc(50.05% + 1px), transparent calc(50.1% + 1px));
+  width: 100%;
+  height: 1398px;
+  height: 87.375rem;
+  top: 3px;
+  top: 0.1875rem;
+  left: -140px;
+  left: -8.75rem;
+}
+@media screen and (min-width: 768px) {
+  .top-overview::before {
+    width: 94.6875%;
+    height: 75.6875rem;
+    top: 0;
+    left: 0;
   }
 }
 
