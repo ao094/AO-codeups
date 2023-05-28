@@ -41,6 +41,16 @@
   padding: rem(4) rem(24) rem(15);
 }
 
+.top-blog-card__body:hover {
+  background-color:  $black2;
+}
+
+.top-blog-card__body:hover :not(.top-blog-card__category) {
+  background-color:  $black2;
+  transition: .3s;
+  color: #fff;
+}
+
 .top-blog-card__info,
 .top-blog-card__text {
   padding-top: rem(4);

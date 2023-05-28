@@ -2,7 +2,8 @@
 
 
 .top-works__layout {
-  padding-top: rem(130);
+  padding-top: rem(127);
+  overflow: hidden;
 
   @include mq(md) {
     padding-top: rem(204);
@@ -33,7 +34,9 @@
 
 }
 
-
+.section-title__position--works {
+  margin-bottom: rem(51);
+}
 
 .top-works__content {
 
@@ -72,7 +75,7 @@
 }
 
 .top-works__textArea {
-  padding: rem(30) rem(20) rem(20);
+  padding: rem(30) rem(20) rem(15);
   width: 100%;
   color: $white;
   width: 100vw;

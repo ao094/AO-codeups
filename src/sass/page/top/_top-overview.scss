@@ -26,6 +26,7 @@
 
 .top-overview__layout {
   padding-top: rem(126);
+  overflow: hidden;
 
   @include mq(md) {
     padding-top: rem(206);
@@ -64,8 +65,6 @@
   }
 
 }
-
-
 
 .top-overview__content {
 
@@ -153,7 +152,7 @@
 .textArea__button {
   margin-top: rem(27);
   @include mq(md) {
-    margin-top: rem(48);
+    margin-top: rem(50);
 
 
   }

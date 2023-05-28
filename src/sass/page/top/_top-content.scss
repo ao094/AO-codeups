@@ -11,7 +11,7 @@
   background-image: linear-gradient(to right top, transparent 49.95%, $yellow 50%, $yellow calc(50.05% + 1px), transparent calc(50.1% + 1px));
   width: 100%;
   height: rem(678);
-  top: rem(122);
+  top: rem(117);
 
   @include mq(md) {
     width: 94.6875%;
@@ -23,24 +23,31 @@
 }
 
 .top-content__layout {
-  padding-top: rem(155);
+  padding-top: rem(152);
+  overflow: hidden;
 
   @include mq(md) {
-    padding-top: rem(196);
+    padding-top: rem(195);
 
   }
+}
+
+.section-title__position--content {
+  margin-bottom: rem(47);
 }
 
 .top-content__lists {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0;
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
   margin-left: calc(50% - 50vw);
   padding-top: rem(4);
 
   @include mq(md) {
     grid-template-columns: repeat(4, 1fr);
+    padding-top: 0;
   }
 }
 
@@ -59,6 +66,7 @@
 }
 
 .top-content__link {
+  position: relative;
   height: 100%;
   width: 100%;
   display: flex;
@@ -75,8 +83,19 @@
   }
 }
 
-.top-content__list:hover {
-  // background-color: rgba($white, 0.6);
+a.top-content__link:hover::before {
+  content: "";
+  position: absolute;
+  background-color: rgba($white, 0.6);
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  // margin: auto;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  transition: all .3s;
 }
 
 .top-content__list--background01 {

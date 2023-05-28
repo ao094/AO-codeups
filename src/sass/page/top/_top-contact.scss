@@ -5,13 +5,13 @@
 }
 
 .top-contact__layout {
-  margin-top: rem(120);
+  margin-top: rem(115);
   padding-top: rem(72);
   padding-bottom: rem(66);
   @include mq(md) {
-    margin-top: rem(151);
+    margin-top: rem(143);
     padding-top: rem(150);
-    padding-bottom: rem(150);
+    padding-bottom: rem(143);
   }
 }
 
@@ -19,7 +19,7 @@
   letter-spacing: 0.07em;
   margin-bottom: rem(20);
   @include mq(md) {
-    margin-bottom: rem(24);
+    margin-bottom: rem(26);
 
   }
 }
@@ -53,7 +53,7 @@
   margin-top: rem(50);
   text-align: center;
   @include mq(md) {
-    margin-top: rem(60);
+    margin-top: rem(62);
 
   }
 }

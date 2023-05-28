@@ -27,6 +27,7 @@
 }
 
 .footer-nav__item a {
+  position: relative;
   display: block;
   width: 100%;
   color: $white;
@@ -34,4 +35,22 @@
   font-weight: $regular;
   line-height: 1.25;
   letter-spacing: 0.075em;
+}
+
+.footer-nav__item a::after {
+  content: '';
+  position: absolute;
+  bottom: rem(-5);
+  left: 10%;
+  width: 80%;
+  height: rem(1);
+  background:$yellow2;
+  transition: all .3s;
+  transform: scale(0, 1);
+  transform-origin: center top;
+}
+
+.footer-nav__item.current a::after,
+.footer-nav__item a:hover::after {
+  transform: scale(1, 1);
 }

@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .top-blog__layout {
-  padding-top: rem(108);
+  padding-top: rem(102);
 
   @include mq(md) {
     padding-top: rem(216);
@@ -39,8 +39,8 @@
   justify-content: center;
   align-items: center;
   @include mq(md){
-    top: -5%;
-    left: -5%;
+    top: -6%;
+    left: -4%;
 
   }
 }

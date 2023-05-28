@@ -67,24 +67,60 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       disableOnInteraction: false,
     },
     speed: 2000,
-    // pagination: {
-    //   el: '.swiper-pagination',
-    //   clickable: true,
-    // }
   }
   new Swiper('.js-mainViewSwiper', swipeOption);
-  // let swiper1 = new Swiper('.js-mainViewSwiper', swipeOption);
 
 
-      //Worksスライダー
-      var swiper = new Swiper (".js-topWorksSwiper", {
-        effect: 'slide',
-        loop: true,
-        direction: 'horizontal',
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
+  //Worksスライダー
+  var swiper = new Swiper (".js-topWorksSwiper", {
+    loop: true,
+    effect: 'slide',
+    direction: 'horizontal',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+  function PageTopAnime() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 200){//上から200pxスクロールしたら
+      $('#footer__page-top').removeClass('DownMove');//#page-topについているDownMoveというクラス名を除く
+      $('#footer__page-top').addClass('UpMove');//#page-topについているUpMoveというクラス名を付与
+    }else{
+      if($('#footer__page-top').hasClass('UpMove')){//すでに#page-topにUpMoveというクラス名がついていたら
+        $('#footer__page-top').removeClass('UpMove');//UpMoveというクラス名を除き
+        $('#footer__page-top').addClass('DownMove');//DownMoveというクラス名を#page-topに付与
+      }
+    }
+  }
+  
+  // 画面をスクロールをしたら動かしたい場合の記述
+  $(window).scroll(function () {
+    PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+  });
+  
+  // ページが読み込まれたらすぐに動かしたい場合の記述
+  $(window).on('load', function () {
+    PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+  });
+  
+  // #page-topをクリックした際の設定
+  $('#footer__page-top a').click(function () {
+      $('body,html').animate({
+          scrollTop: 0//ページトップまでスクロール
+      }, 500);//ページトップスクロールの速さ。数字が大きいほど遅くなる
+      return false;//リンク自体の無効化
+  });
+
+  // スクロールするとヘッダーの色変更
+  $(window).on("scroll", function () {
+    const sliderHeight = $(".mainView").height();
+    if (sliderHeight - 30 < $(this).scrollTop()) {
+      $(".js-header").addClass("headerColorScroll");
+    } else {
+      $(".js-header").removeClass("headerColorScroll");
+    }
+  });
 
 });
