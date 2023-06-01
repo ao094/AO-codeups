@@ -20,6 +20,10 @@
   overflow: hidden;
   width: 100%;
   height: 100vh;
+  min-height: rem(450);
+  @include mq(md) {
+  min-height: rem(600);
+}
 }
 
 .mainView__swiper-wrapper {

@@ -2,29 +2,27 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <meta name="format-detection" content="telephone=no" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
   <!-- meta情報 -->
   <title>CodeUps</title>
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
   <!-- ogp -->
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
-  <!-- ファビコン -->
-  <link rel="”icon”" href="" />
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP&display=swap"
     rel="stylesheet">
   <!-- css -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/styles.css">
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -122,11 +120,11 @@
               <time class="top-news__date" datetime="2021-11-18">2020.07.20</time>
               <span class="top-news__category">お知らせ</span>
             </div>
-            <div class="top-news__block">
+            <h2 class="top-news__block">
               <a href="#" class="top-news__text">
                 記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。
               </a>
-            </div>
+            </h2>
             <div class="top-news__button">
               <a href="" class="button button-animation--top-news"><span>すべて見る</span></a>
             </div>
@@ -145,33 +143,37 @@
           <span class="section-subtitle section-subtitle__position">Content</span>
         </h2>
 
-        <ul class="top-content__lists">
-
-          <li class="top-content__list top-content__list--background01">
-            <a href="#" class="top-content__link">
-              経営理念ページへ
-            </a>
-          </li>
-
-          <li class="top-content__list top-content__list--background02">
-            <a href="#" class="top-content__link">
-              理念1へ
-            </a>
-          </li>
-
-          <li class="top-content__list top-content__list--background03">
-            <a href="#" class="top-content__link">
-              理念2へ
-            </a>
-          </li>
-
-          <li class="top-content__list top-content__list--background04">
-            <a href="#" class="top-content__link">
-              理念3へ
-            </a>
-          </li>
-
-        </ul>
+        <div class="top-content__container">
+          <div class="top-content__wrapper">
+            <ul class="top-content__lists">
+    
+              <li class="top-content__list top-content__list--background01">
+                <a href="#" class="top-content__link">
+                  経営理念ページへ
+                </a>
+              </li>
+    
+              <li class="top-content__list top-content__list--background02">
+                <a href="#" class="top-content__link">
+                  理念1へ
+                </a>
+              </li>
+    
+              <li class="top-content__list top-content__list--background03">
+                <a href="#" class="top-content__link">
+                  理念2へ
+                </a>
+              </li>
+    
+              <li class="top-content__list top-content__list--background04">
+                <a href="#" class="top-content__link">
+                  理念3へ
+                </a>
+              </li>
+    
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
     <!-- 事業内容 -->
@@ -232,25 +234,27 @@
         企業概要
         <span class="section-subtitle section-subtitle__position section-subtitle__position--overview">Overview</span>
       </h2>
-      <div class="top-overview__background top-overview__background--reverse">
-        <div class="top-overview__inner inner">
-          <div class="top-overview__content top-overview__content--reverse">
-            <div class="top-overview__images">
-              <img src="src/images/top/overview01.jpg" alt="">
-            </div>
-            <div class="top-overview__textArea textArea">
-              <h3 class="textArea__mainTitle">メインタイトルが入ります。</h3>
-              <p class="textArea__text">
-                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-              </p>
-              <div class="textArea__button">
-                <a href="" class="button button-animation"><span>詳しく見る</span></a>
-
+      <div class="top-overview__wrapper">
+        <div class="top-overview__background top-overview__background--reverse">
+          <div class="top-overview__inner inner">
+            <div class="top-overview__content top-overview__content--reverse">
+              <div class="top-overview__images">
+                <img src="src/images/top/overview01.jpg" alt="">
+              </div>
+              <div class="top-overview__textArea textArea">
+                <h3 class="textArea__mainTitle">メインタイトルが入ります。</h3>
+                <p class="textArea__text">
+                  テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                </p>
+                <div class="textArea__button">
+                  <a href="" class="button button-animation"><span>詳しく見る</span></a>
+  
+                </div>
               </div>
             </div>
+  
+  
           </div>
-
-
         </div>
       </div>
     </section>

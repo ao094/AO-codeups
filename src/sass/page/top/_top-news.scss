@@ -53,6 +53,7 @@
 }
 
 .top-news__category {
+  white-space: nowrap;
   margin-left: rem(32);
   font-size: rem(14);
   line-height: calc(20 / 14);
@@ -129,7 +130,10 @@
 .top-news__button .button span {
   position: relative;
   z-index: 3;
+  color: $white;
+  @include mq(md){
   color: #000;
+}
 }
 
 .top-news__button .button:hover {

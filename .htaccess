@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "aocodeups"
+AuthUserFile "/home/users/0/main.jp-7116316ec1aba5b1/web/codeups/.htpasswd"
+require valid-user

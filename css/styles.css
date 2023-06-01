@@ -666,7 +666,7 @@ select::-ms-expand {
   background-color: rgba(17, 17, 17, .5);
   height: 50px;
   height: 3.125rem;
-  width: 100vw;
+  width: 100%;
 }
 
 .header.headerColorScroll {
@@ -832,8 +832,6 @@ select::-ms-expand {
 .pc-nav__item.pc-nav__item--white a:hover {
   background-color: #333;
   color: #fff;
-  padding: 0 32px;
-  padding: 0 2rem;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
 }
@@ -934,6 +932,13 @@ select::-ms-expand {
   overflow: hidden;
   width: 100%;
   height: 100vh;
+  min-height: 450px;
+  min-height: 28.125rem;
+}
+@media screen and (min-width: 768px) {
+  .mainView__swiper-container {
+    min-height: 37.5rem;
+  }
 }
 
 .mainView__swiper-wrapper {
@@ -1103,6 +1108,7 @@ select::-ms-expand {
 .top-blog__button {
   margin-top: 24px;
   margin-top: 1.5rem;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .top-blog__button {
@@ -1189,15 +1195,16 @@ select::-ms-expand {
 }
 
 .top-content::before {
-  position: absolute;
-  z-index: -999;
   content: "";
-  background-image: linear-gradient(to right top, transparent 49.95%, #F9F871 50%, #F9F871 calc(50.05% + 1px), transparent calc(50.1% + 1px));
   width: 100%;
   height: 678px;
   height: 42.375rem;
+  position: absolute;
   top: 117px;
   top: 7.3125rem;
+  left: 0;
+  z-index: -999;
+  background-image: linear-gradient(to right top, transparent 49.95%, #F9F871 50%, #F9F871 calc(50.05% + 1px), transparent calc(50.1% + 1px));
 }
 @media screen and (min-width: 768px) {
   .top-content::before {
@@ -1211,7 +1218,6 @@ select::-ms-expand {
 .top-content__layout {
   padding-top: 152px;
   padding-top: 9.5rem;
-  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .top-content__layout {
@@ -1228,9 +1234,9 @@ select::-ms-expand {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0;
-  width: 100%;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
   max-width: 100%;
-  margin-left: calc(50% - 50vw);
   padding-top: 4px;
   padding-top: 0.25rem;
 }
@@ -1242,12 +1248,13 @@ select::-ms-expand {
 }
 
 .top-content__list {
-  width: 50vw;
+  width: 49.8vw;
+  margin: 0 auto;
   aspect-ratio: 188/168;
 }
 @media screen and (min-width: 768px) {
   .top-content__list {
-    width: 25vw;
+    width: 24.8vw;
     aspect-ratio: 1/1;
   }
 }
@@ -1294,28 +1301,28 @@ a.top-content__link:hover::before {
 }
 
 .top-content__list--background01 {
-  background-image: url(../../images/top/content01.jpg);
+  background-image: url(../../codeups/images/top/content01.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .top-content__list--background02 {
-  background-image: url(../../images/top/content02.jpg);
+  background-image: url(../../codeups/images/top/content02.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .top-content__list--background03 {
-  background-image: url(../../images/top/content03.jpg);
+  background-image: url(../../codeups/images/top/content03.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .top-content__list--background04 {
-  background-image: url(../../images/top/content04.jpg);
+  background-image: url(../../codeups/images/top/content04.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1386,6 +1393,7 @@ a.top-content__link:hover::before {
 }
 
 .top-news__category {
+  white-space: nowrap;
   margin-left: 32px;
   margin-left: 2rem;
   font-size: 14px;
@@ -1479,7 +1487,12 @@ a.top-content__link:hover::before {
 .top-news__button .button span {
   position: relative;
   z-index: 3;
-  color: #000;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .top-news__button .button span {
+    color: #000;
+  }
 }
 
 .top-news__button .button:hover {
@@ -1546,7 +1559,6 @@ a.top-content__link:hover::before {
 .top-overview__layout {
   padding-top: 126px;
   padding-top: 7.875rem;
-  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .top-overview__layout {
@@ -1562,6 +1574,10 @@ a.top-content__link:hover::before {
     top: -185%;
     left: 7%;
   }
+}
+
+.top-overview__wrapper {
+  overflow: hidden;
 }
 
 .top-overview__background {

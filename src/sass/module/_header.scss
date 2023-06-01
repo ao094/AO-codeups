@@ -12,7 +12,7 @@
 .header {
   background-color: rgba($color: $black, $alpha: .5);
   height: rem(50);
-  width: 100vw;
+  width: 100%;
 }
 
 .header.headerColorScroll {
@@ -143,7 +143,6 @@
 .pc-nav__item.pc-nav__item--white a:hover {
   background-color: $black2;
   color: $white;
-  padding: 0 rem(32);
   transition: ease .3s;
 }
 

@@ -26,7 +26,6 @@
 
 .top-overview__layout {
   padding-top: rem(126);
-  overflow: hidden;
 
   @include mq(md) {
     padding-top: rem(206);
@@ -41,6 +40,10 @@
     left: 7%;
 
   }
+}
+
+.top-overview__wrapper {
+  overflow: hidden;
 }
 
 .top-overview__background {
