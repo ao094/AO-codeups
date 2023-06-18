@@ -13,11 +13,13 @@
   background-color: rgba($color: $black, $alpha: .5);
   height: rem(50);
   width: 100%;
+  transition: .3s;
 }
 
 .header.headerColorScroll {
   background-color: $black;
-  transition: color 0.4s ease-out;
+  transition: .3s;
+
 }
 
 .header__inner {

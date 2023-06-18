@@ -2,6 +2,7 @@
 
 .top-content {
   position: relative;
+
 }
 
 .top-content::before {
@@ -36,11 +37,9 @@
   margin-bottom: rem(47);
 }
 
-.top-content__container {
-  // overflow: hidden;
-}
-
 .top-content__wrapper {
+  overflow: hidden;
+
 }
 
 .top-content__lists {
@@ -51,6 +50,7 @@
   margin: 0 calc(50% - 50vw);
   max-width: 100%;
   padding-top: rem(4);
+  
 
   @include mq(md) {
     grid-template-columns: repeat(4, 1fr);
@@ -59,12 +59,15 @@
 }
 
 .top-content__list {
-  width: 49.8vw;
+  width: 50vw;
   margin: 0 auto;
   aspect-ratio: 188/ 168;
+  position: relative;
+  overflow: hidden;
+
 
   @include mq(md) {
-    width: 24.8vw;
+    width: 25vw;
     aspect-ratio: 1/1;
   }
 }
@@ -92,18 +95,30 @@ a.top-content__link:hover::before {
   position: absolute;
   background-color: rgba($white, 0.6);
   bottom: 0;
-  height: 100%;
   left: 0;
-  // margin: auto;
   right: 0;
   top: 0;
-  width: 100%;
   z-index: 1;
-  transition: all .3s;
+  transition: opacity 0.3s; /* 透明度の変化に対してtransitionを設定 */
+  z-index: 1;
+}
+
+.top-content__list:hover a.top-content__link::before {
+  opacity: 1; /* hover時に透明度を変化させる */
+  animation: fade-in .3s; /* アニメーションの設定 */
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .top-content__list--background01 {
-  background-image: url(../../codeups/images/top/content01.jpg);
+  background-image: url(../images/top/content01.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -111,21 +126,21 @@ a.top-content__link:hover::before {
 }
 
 .top-content__list--background02 {
-  background-image: url(../../codeups/images/top/content02.jpg);
+  background-image: url(../images/top/content02.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .top-content__list--background03 {
-  background-image: url(../../codeups/images/top/content03.jpg);
+  background-image: url(../images/top/content03.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .top-content__list--background04 {
-  background-image: url(../../codeups/images/top/content04.jpg);
+  background-image: url(../images/top/content04.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

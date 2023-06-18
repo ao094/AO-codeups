@@ -18,7 +18,7 @@
 
 .section-title__position {
   position: relative;
-  margin-bottom: rem(48);
+  margin-bottom: rem(45);
 }
 
 .section-subtitle {
@@ -53,12 +53,12 @@
 
 .section-subtitle__position--reverse {
   position: absolute;
-  top: -214%;
-  left: 28.5%;
+  top: -213%;
+  left: 25.8%;
   z-index: -2;
   @include mq(md) {
-    top: -184%;
-    left: 66%;
+    top: -167%;
+    left: 68.5%;
 
   }
 }

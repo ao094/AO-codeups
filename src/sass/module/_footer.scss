@@ -117,13 +117,13 @@
 .footer__page-top--arrow {
   height: rem(20);
   width: rem(20);
-  border-top: rem(1) solid $black2;
-  border-right: rem(1) solid $black2;
+  border-top: rem(2) solid $black2;
+  border-right: rem(2) solid $black2;
   transform: translateY(20%) rotate(-45deg);
 
 }
 
 #footer__page-top a:hover .footer__page-top--arrow {
-  border-top: rem(1) solid $white;
-  border-right: rem(1) solid $white;
+  border-top: rem(2) solid $white;
+  border-right: rem(2) solid $white;
 }

@@ -34,10 +34,10 @@
 }
 
 .section-subtitle__position--overview {
-  left: 17.5%;
+  left: 13.5%;
   @include mq(md) {
     top: -185%;
-    left: 7%;
+    left: 0;
 
   }
 }
@@ -59,11 +59,13 @@
 }
 
 .top-overview__background--reverse {
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
   background: linear-gradient(180deg, transparent 0%, transparent 30%, $black2 30%, $black2 100%);
   
   @include mq(md) {
-    padding: rem(77) 0 rem(83);
-
+    padding: rem(77) 0 rem(88);
+    margin-top: rem(-6);
     background: linear-gradient(90deg, $black2 0%, $black2 70%, transparent 70%, transparent 100%);
   }
 
@@ -93,6 +95,7 @@
   padding-top: rem(4);
 
   @include mq(md) {
+    padding-top: rem(9);
     aspect-ratio: 557/389;
     width: 50.6%;
     margin-left: unset;
@@ -104,6 +107,12 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  max-width: rem(600);
+  margin: 0 auto;
+  aspect-ratio: 557/389;
+  @include mq(md) {
+    aspect-ratio: 375/261;
+  }
 }
 
 .top-overview__textArea {
@@ -116,7 +125,7 @@
   
   @include mq(md) {
     padding: 0;
-    padding-top: rem(35);
+    padding-top: rem(42);
     width: 46.3%;
     margin: 0 auto;
     text-align: left;

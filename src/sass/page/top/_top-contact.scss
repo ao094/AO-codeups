@@ -25,12 +25,12 @@
 }
 
 .section-subtitle__position--contact {
-  z-index: 999;
-  left: 24%;
+  z-index: 2;
+  left: 21%;
   letter-spacing: 0.025em;
   @include mq(md) {
     top: -313%;
-    left: 7%;
+    left: 0;
 
   }
 }

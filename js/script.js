@@ -76,6 +76,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     loop: true,
     effect: 'slide',
     direction: 'horizontal',
+    autoplay: {
+      delay: 3000, // オートプレイの遅延時間（ミリ秒）
+      disableOnInteraction: false, // ユーザーのインタラクションでオートプレイを停止しない
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
