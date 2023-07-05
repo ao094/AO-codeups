@@ -2,23 +2,26 @@
 
 
 .top-works__layout {
-  padding-top: rem(127);
+  margin-top: rem(87);
+  padding-top: rem(40);
   overflow: hidden;
 
   @include mq(md) {
-    padding-top: rem(204);
+    margin-top: rem(184);
+    padding-top: rem(20);
 
   }
 }
 
 .top-works__background {
   margin: 0 calc(50% - 50vw);
+  margin-top: rem(51);
   width: 100vw;
   background: linear-gradient(180deg, transparent 0%, transparent 30%, $black2 30%, $black2 100%);
 
   @include mq(md) {
   padding: 80px 0;
-  margin-top: rem(-6);
+  margin-top: rem(44);
     background: linear-gradient(90deg, transparent 0%, transparent 30%, $black2 30%, $black2 100%);
   }
 }
@@ -34,9 +37,9 @@
 
 }
 
-.section-title__position--works {
-  margin-bottom: rem(51);
-}
+// .section-title__position--works {
+//   margin-bottom: rem(51);
+// }
 
 .top-works__content {
 

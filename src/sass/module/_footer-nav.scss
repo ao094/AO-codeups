@@ -14,6 +14,7 @@
   display: inline-grid;
   grid-template-columns: repeat(1, 1fr);
   gap: rem(12);
+  width: 100%;
 
   // display: flex;
   // flex-wrap: wrap;
@@ -24,6 +25,14 @@
     justify-content: space-between;
   }
 
+}
+
+.footer-nav__item {
+  width: inherit;
+
+  @include mq(md) {
+    width: unset;
+  }
 }
 
 .footer-nav__item a {

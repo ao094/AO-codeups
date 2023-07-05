@@ -1,5 +1,9 @@
 @use "global"as *;
 
+.section-title__container {
+  position: relative;
+}
+
 .section-title {
   text-align: center;
   color: $white;
@@ -7,7 +11,6 @@
   font-size: rem(20);
   letter-spacing: 0.1em;
   line-height: 1;
-  position: relative;
 
   @include mq(md) {
     font-size: rem(30);
@@ -17,8 +20,8 @@
 }
 
 .section-title__position {
-  position: relative;
-  margin-bottom: rem(45);
+  // position: relative;
+  // margin-bottom: rem(45);
 }
 
 .section-subtitle {
@@ -54,11 +57,14 @@
 .section-subtitle__position--reverse {
   position: absolute;
   top: -213%;
-  left: 25.8%;
+  // left: 25.8%;
+  right: 0;
+  left: 0;
   z-index: -2;
   @include mq(md) {
-    top: -167%;
-    left: 68.5%;
+    top: -205%;
+    // left: 68.5%;
+    left: unset;
 
   }
 }

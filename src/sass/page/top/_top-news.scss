@@ -2,10 +2,10 @@
 
 
 .top-news__layout {
-  padding-top: rem(17);
+  margin-top: rem(17);
 
   @include mq(md) {
-    padding-top: rem(30);
+    margin-top: rem(30);
 
   }
 }

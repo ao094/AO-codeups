@@ -43,6 +43,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       }
     });
 
+    $('.js-hamburger').on('click', function () {
+      $('body').toggleClass('is-open');
+     });
+
 
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)

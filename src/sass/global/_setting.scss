@@ -48,6 +48,10 @@ body {
 
 }
 
+body.is-open {
+  overflow: hidden;
+}
+
 main {
   // overflow: hidden;
 }
