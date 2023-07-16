@@ -1238,7 +1238,6 @@ select::-ms-expand {
   grid-template-columns: repeat(2, 1fr);
   gap: 0;
   width: 100vw;
-  margin: 0 calc(50% - 50vw);
   max-width: 100%;
   padding-top: 4px;
   padding-top: 0.25rem;
