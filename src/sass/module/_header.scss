@@ -1,6 +1,5 @@
 @use "global" as *;
 
-
 .header__layout {
   position: fixed;
   top: 0;
@@ -19,7 +18,6 @@
 .header.headerColorScroll {
   background-color: $black;
   transition: .3s;
-
 }
 
 .header__inner {
@@ -34,8 +32,7 @@
   }
 }
 
-
-.logo {
+.header__logo {
   width: rem(70);
   position: relative;
   z-index: 9999;
@@ -43,108 +40,3 @@
   width: rem(95);
 }
 }
-
-.sp-nav {
-  // display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: $black;
-  width: 100%;
-  height: 100vh;
-  z-index: 8888;
-  transform: translateX(100%);
-  transition: ease .3s;
-
-  @include mq(md){
-    display: none;
-  }
-}
-
-.sp-nav.is-open {
-  transform: translateX(0);
-
-}
-
-.sp-nav__items {
-  padding-top: rem(160);
-  padding-bottom: rem(208);
-  height: 100vh;
-  overflow: scroll;
-}
-
-.sp-nav__item a {
-  display: block;
-  width: 100%;
-  padding-top: rem(16);
-  padding-bottom: rem(16);
-  text-align: center;
-  color: #fff;
-  font-size: rem(16);
-  font-weight: $regular;
-}
-
-.pc-nav {
-  height: inherit;
-  display: none;
-  @include mq(md){
-    display: block;
-  }
-}
-
-.pc-nav__items {
-  height: inherit;
-  display: flex;
-  align-items: center;
-}
-
-.pc-nav__item {
-  height: inherit;
-}
-
-.pc-nav__item a {
-  position: relative;
-  height: inherit;
-  color: #fff;
-  display: grid;
-  place-items: center;
-  padding: 0 rem(20);
-  font-size: rem(16);
-  font-weight: $regular;
-}
-
-.pc-nav__item:not(:last-child) a::after {
-  content: '';
-  position: absolute;
-  bottom: rem(8);
-  left: 10%;
-  width: 80%;
-  height: rem(1);
-  background:$yellow2;
-  transition: all .3s;
-  transform: scale(0, 1);
-  transform-origin: center top;
-}
-
-.pc-nav__item.current a::after,
-.pc-nav__item a:hover::after {
-  transform: scale(1, 1);
-}
-
-.pc-nav__item.pc-nav__item--white {
-  margin-left: rem(16);
-}
-
-.pc-nav__item.pc-nav__item--white a {
-  background-color: $white;
-  color: $black2;
-  padding: 0 rem(37);
-}
-
-.pc-nav__item.pc-nav__item--white a:hover {
-  background-color: $black2;
-  color: $white;
-  transition: ease .3s;
-}
-

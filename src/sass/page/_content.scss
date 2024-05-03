@@ -1,0 +1,36 @@
+@use 'global'as *;
+
+.content {
+  position: relative;
+}
+
+.content::before {
+  content: "";
+  width: 100%;
+  height: rem(678);
+  position: absolute;
+  top: rem(-38);
+  left: 0;
+  z-index: -999;
+  background-image: linear-gradient(to right top, transparent 49.95%, $yellow 50%, $yellow calc(50.05% + 1px), transparent calc(50.1% + 1px));
+
+  @include mq(md) {
+    width: 94.6875%;
+    height: rem(1212);
+    top: rem(-112);
+    left: 0;
+  }
+}
+
+.content__layout {
+  margin-top: rem(152);
+
+  @include mq(md) {
+    margin-top: rem(193);
+  }
+}
+
+.content__wrapper {
+  overflow: hidden;
+  margin-top: rem(47);
+}

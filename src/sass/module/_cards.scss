@@ -1,0 +1,31 @@
+@use "global"as *;
+
+.cards {
+  // display: flex;
+  // flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(25);
+
+  @include mq(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// flexで書く場合
+// .card {
+//   max-width: calc( 33.3333% - 2.5rem * 2 / 3);
+//   width: 100%;
+// }
+
+// .card + .card {
+//   margin-left: 2.5rem;
+// }
+
+// .card:nth-child(3n + 1){
+//   margin-left: 0;
+// }
+
+// .card:nth-child(n + 4){
+//   margin-top: 2.5rem;
+// }

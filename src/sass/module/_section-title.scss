@@ -1,10 +1,10 @@
 @use "global"as *;
 
-.section-title__container {
+.section-title {
   position: relative;
 }
 
-.section-title {
+.section-title__main {
   text-align: center;
   color: $white;
   font-weight: $regular;
@@ -19,12 +19,7 @@
   }
 }
 
-.section-title__position {
-  // position: relative;
-  // margin-bottom: rem(45);
-}
-
-.section-subtitle {
+.section-title__sub {
   display: block;
   color: rgba($color: $yellow, $alpha: .27);
   font-family: $english-font-family;
@@ -34,37 +29,77 @@
   letter-spacing: 0.04em;
   line-height: 1;
 
+  position: absolute;
+  top: -209%;
+  left: 50%;
+  transform: translateX(-50%);
+
   @include mq(md) {
     font-size: rem(110);
     letter-spacing: 0.01818182em;
     line-height: calc(158 / 110);
-  }
-}
 
-.section-subtitle__position {
-  position: absolute;
-  top: -209%;
-  left: 20%;
-  z-index: -2;
-
-  @include mq(md) {
     top: -158%;
-    left: 0;
-
+    left: 24%;
   }
 }
 
-.section-subtitle__position--reverse {
+.section-title__sub--reverse {
   position: absolute;
   top: -213%;
-  // left: 25.8%;
-  right: 0;
-  left: 0;
-  z-index: -2;
-  @include mq(md) {
-    top: -205%;
-    // left: 68.5%;
-    left: unset;
+  left: 50%;
+  transform: translateX(-50%);
 
+  @include mq(md) {
+    top: -185%;
+    // left: unset;
+    left: 79.5%;
+    // right: -16%;
   }
 }
+
+.section-title__sub--overview {
+  @include mq(md) {
+    top: -185%;
+  }
+}
+
+.section-title__sub--contact {
+  letter-spacing: 0.025em;
+  @include mq(md) {
+    top: -300%;
+  }
+}
+
+// .section-title__position {
+//   position: relative;
+//   margin-bottom: rem(45);
+// }
+
+// .section-title__position--content {
+//   margin-bottom: rem(47);
+// }
+
+// .section-title__position--works {
+//   margin-bottom: rem(51);
+// }
+
+// .section-title__position--blog {
+//   @include mq(md) {
+//   margin-bottom: rem(46.5);
+// }
+// }
+
+// .section-subtitle__position--blog {
+//   @include mq(md) {
+//     top: -218%;
+//   }
+// }
+
+// .section-title__position--contact {
+//   letter-spacing: 0.07em;
+//   margin-bottom: rem(20);
+//   @include mq(md) {
+//     margin-bottom: rem(26);
+//   }
+// }

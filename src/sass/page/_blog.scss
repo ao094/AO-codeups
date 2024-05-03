@@ -1,0 +1,30 @@
+@use "global"as *;
+
+.blog__layout {
+  // padding-top: rem(102);
+  margin-top: rem(102);
+
+  @include mq(md) {
+    // padding-top: rem(216);
+    margin-top: rem(216);
+  }
+}
+
+.blog__cards {
+  margin-top: rem(46.5);
+  padding-top: rem(17);
+
+  @include mq(md) {
+    padding-top: 0;
+  }
+}
+
+.blog__button {
+  margin-top: rem(24);
+  text-align: center;
+
+  @include mq(md) {
+    margin-top: rem(46);
+    text-align: center;
+  }
+}

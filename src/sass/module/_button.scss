@@ -1,7 +1,6 @@
 @use "global"as *;
 
-
-.button {
+.button__link {
   position: relative;
 	overflow: hidden;
   text-align: center;
@@ -16,6 +15,9 @@
   padding: rem(14) 0;
   letter-spacing: 0.1em;
   transition: ease .3s;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 
   @include mq(md) {
   font-size: rem(16);
@@ -23,20 +25,19 @@
   width: rem(360);
   padding: rem(19) 0;
   }
-
 }
 
-.button span {
+.button__link span {
   position: relative;
   z-index: 3;
   color: $white;
 }
 
-.button:hover span {
+.button__link:hover span {
   color: $black2;
 }
 
-.button-animation:before {
+.button__animation:before {
   content: '';
   position: absolute;
   top: 0;
@@ -50,7 +51,7 @@
 	transform-origin: right top;
 }
 
-.button-animation:hover:before{
+.button__animation:hover:before{
 	transform-origin:left top;
 	transform:scale(1, 1);
 }

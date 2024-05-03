@@ -1,0 +1,69 @@
+@use "global"as *;
+
+.thumbgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  width: 100%;
+
+  @include mq(md) {
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 0;
+  }
+}
+
+// .thumbgrid__list {
+//   width: 100%;
+//   height: 100%;
+//   margin: 0 auto;
+//   position: relative;
+//   overflow: hidden;
+// }
+
+.thumbgrid__link {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  font-size: rem(20);
+  letter-spacing: 0.1em;
+
+  @include mq(md) {
+    font-size: rem(25);
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+  }
+}
+
+.thumbgrid__link:hover::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, .6);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.thumbgrid__image {
+  aspect-ratio: 188/ 168;
+
+  @include mq(md) {
+    aspect-ratio: 1/1;
+  }
+}
+
+.thumbgrid__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbgrid__text {
+  position: absolute;
+}

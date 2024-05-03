@@ -1,0 +1,51 @@
+@use 'global'as *;
+
+.overview {
+  position: relative;
+}
+
+.overview::before {
+  position: absolute;
+  z-index: -999;
+  content: "";
+  background-image: linear-gradient(to left top, transparent 49.95%, $yellow 50%, $yellow calc(50.05% + 1px), transparent calc(50.1% + 1px));
+  width: 100%;
+  height: rem(1398);
+  top: rem(-127);
+  left: rem(-140);
+
+  @include mq(md) {
+    width: 94.6875%;
+    height: rem(1211);
+    top: rem(-208);
+    left: 0;
+  }
+}
+
+.overview__layout {
+  // padding-top: rem(126);
+  margin-top: rem(126);
+
+  @include mq(md) {
+    // padding-top: rem(206);
+    margin-top: rem(206);
+  }
+}
+
+.overview__wrapper {
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.overview__background {
+  // margin: rem(44) calc(50% - 50vw) 0;
+  margin: rem(51) calc(50% - 50vw) 0;
+  width: 100vw;
+  background: linear-gradient(180deg, transparent 0% 30%, $black2 30% 100%);
+
+  @include mq(md) {
+    padding: rem(80) 0 rem(86);
+    margin-top: rem(41);
+    background: linear-gradient(90deg, $black2 0%, calc(50% + 16rem), transparent calc(50% + 16rem) 100%);
+  }
+}

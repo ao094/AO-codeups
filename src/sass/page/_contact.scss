@@ -1,0 +1,42 @@
+@use 'global'as *;
+
+.contact {
+  background-color: $bg-gray;
+}
+
+.contact__layout {
+  margin-top: rem(106);
+  padding-top: rem(72);
+  padding-bottom: rem(66);
+
+  @include mq(md) {
+    margin-top: rem(143);
+    padding-top: rem(150);
+    padding-bottom: rem(143);
+  }
+}
+
+.contact__text-box {
+  margin-top: rem(20);
+
+  @include mq(md) {
+    margin-top: rem(26);
+    text-align: center;
+  }
+}
+
+.contact__text {
+  color: $white;
+  font-size: rem(16);
+  line-height: 1.5;
+  letter-spacing: 0.125em;
+}
+
+.contact__button {
+  margin-top: rem(50);
+  text-align: center;
+
+  @include mq(md) {
+    margin-top: rem(62);
+  }
+}

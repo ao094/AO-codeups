@@ -45,16 +45,15 @@ $bg-gray: #3D3D3D;
 
 body {
   background-color: $black;
-
 }
 
 body.is-open {
   overflow: hidden;
 }
 
-main {
-  // overflow: hidden;
-}
+// main {
+//   overflow: hidden;
+// }
 
 ////////////////////
 // メディアクエリとブレークポイントの設定
