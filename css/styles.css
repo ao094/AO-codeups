@@ -1079,21 +1079,6 @@ select::-ms-expand {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .section-title__sub--overview {
-    top: -185%;
-  }
-}
-
-.section-title__sub--contact {
-  letter-spacing: 0.025em;
-}
-@media screen and (min-width: 768px) {
-  .section-title__sub--contact {
-    top: -300%;
-  }
-}
-
 .smallButton__link {
   position: relative;
   overflow: hidden;

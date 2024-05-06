@@ -58,18 +58,18 @@
   }
 }
 
-.section-title__sub--overview {
-  @include mq(md) {
-    top: -185%;
-  }
-}
+// .section-title__sub--overview {
+//   @include mq(md) {
+//     top: -185%;
+//   }
+// }
 
-.section-title__sub--contact {
-  letter-spacing: 0.025em;
-  @include mq(md) {
-    top: -300%;
-  }
-}
+// .section-title__sub--contact {
+  //   letter-spacing: 0.025em;
+  //   @include mq(md) {
+  //     top: -300%;
+  //   }
+  // }
 
 // .section-title__position {
 //   position: relative;

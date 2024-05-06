@@ -23,11 +23,9 @@
 }
 
 .overview__layout {
-  // padding-top: rem(126);
   margin-top: rem(126);
 
   @include mq(md) {
-    // padding-top: rem(206);
     margin-top: rem(206);
   }
 }

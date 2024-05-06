@@ -6,11 +6,9 @@
 
 .works__layout {
   margin-top: rem(127);
-  // padding-top: rem(40);
 
   @include mq(md) {
     margin-top: rem(208);
-    // padding-top: rem(20);
   }
 }
 
