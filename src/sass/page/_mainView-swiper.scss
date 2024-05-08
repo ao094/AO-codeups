@@ -12,7 +12,7 @@
 
 .mainView__swiper-slide.swiper-slide-active .mainView__slide-img,
 .mainView__swiper-slide.swiper-slide-duplicate-active .mainView__slide-img,
-.mainView__swiper-slide.swiper-slide-prev.mainView__slide-img {
+.mainView__swiper-slide.swiper-slide-prev .mainView__slide-img {
   animation: zoomUp 10s linear 0s 1 normal both;
 }
 
