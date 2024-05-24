@@ -123,7 +123,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // スクロールするとヘッダーの色変更
   $(window).on("scroll", function () {
-    const sliderHeight = $(".mainView").height();
+    const sliderHeight = $(".mainView, .page-title").height();
     if (sliderHeight - 30 < $(this).scrollTop()) {
       $(".js-header").addClass("headerColorScroll");
     } else {

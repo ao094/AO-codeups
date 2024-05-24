@@ -1,0 +1,37 @@
+@use "global"as *;
+
+.page-title {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background: url(../images/top/content01.jpg) no-repeat center/cover;
+
+  @include mq("md"){ 
+  background: url(../images/content/top_pc.jpg) center center / contain no-repeat;
+  }
+}
+
+.page-title__inner {
+  padding-top:  rem(194);
+  padding-bottom:  rem(190);
+  text-align: center;
+
+  @include mq("md"){ 
+    padding-top:  rem(168);  
+    padding-bottom:  rem(168);
+  }
+}
+
+.page-title__lead {
+  font-size:   rem(30);
+  font-weight: $bold;
+  letter-spacing: .05em;
+  color: $white;
+  line-height: calc(43.44/30);
+  @include mq("md"){ 
+  font-size:   rem(35);
+  letter-spacing: .05714286em;
+  line-height: 1;
+  text-indent: .6em;
+  }
+}

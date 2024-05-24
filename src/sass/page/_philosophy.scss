@@ -1,0 +1,48 @@
+@use "global"as *;
+
+.philosophy__layout {
+  margin-top: rem(85);
+  @include mq("md"){ 
+  margin-top:  rem(70);
+  }
+}
+
+.philosophy {
+  position: relative;
+}
+
+.philosophy__title {
+  font-size: rem(20);
+  font-weight: $regular;
+  line-height: calc(28.96 / 20);
+  letter-spacing: .05em;
+  color: $white;
+  text-align: center;
+
+  @include mq("md") {
+    font-size: rem(25);
+    letter-spacing: 0.0014em;
+    line-height: calc(35 / 25);
+    letter-spacing: 0.08em;
+  }
+}
+
+
+.philosophy__textBlock {
+  margin-top: rem(24);
+  color: $white;
+}
+
+.philosophy__text {
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: calc(23.17 / 16);
+  // letter-spacing: 0.000125em;
+  letter-spacing: 0.125em;
+
+  @include mq("md") {
+    line-height: calc(35 / 16);
+    text-align: center;
+  }
+}
+

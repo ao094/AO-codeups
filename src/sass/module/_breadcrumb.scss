@@ -1,0 +1,24 @@
+@use "global"as *;
+
+.breadcrumb__layout {
+margin-top:  rem(10);
+max-width: $inner;
+}
+
+.breadcrumb {
+  font-size:   rem(16);
+}
+.breadcrumb li {
+  display: inline;
+  color: $white;
+  line-height: 1;
+  letter-spacing: .005em;
+  @include mq("md"){ 
+  letter-spacing: .03em;
+  }
+}
+
+.breadcrumb li + li:before {
+  margin: 0  rem(5);
+  content: ">";
+}

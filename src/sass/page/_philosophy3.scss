@@ -1,0 +1,8 @@
+@use "global"as *;
+
+.philosophy3__layout {
+  margin-top:  rem(35);
+  @include mq("md"){ 
+  margin-top:  rem(105);
+  }
+}

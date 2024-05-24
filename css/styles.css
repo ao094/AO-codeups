@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* リキッドレイアウト対応 */
 body {
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -26,7 +27,6 @@ body.is-open {
   }
 }
 
-/* リキッドレイアウト対応 */
 html {
   font-size: 16px;
 }
@@ -173,6 +173,35 @@ select {
 
 select::-ms-expand {
   display: none;
+}
+
+.breadcrumb__layout {
+  margin-top: 10px;
+  margin-top: 0.625rem;
+  max-width: 1100px;
+}
+
+.breadcrumb {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+.breadcrumb li {
+  display: inline;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: 0.005em;
+}
+@media screen and (min-width: 768px) {
+  .breadcrumb li {
+    letter-spacing: 0.03em;
+  }
+}
+
+.breadcrumb li + li:before {
+  margin: 0 5px;
+  margin: 0 0.3125rem;
+  content: ">";
 }
 
 .button__link {
@@ -865,6 +894,16 @@ select::-ms-expand {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .media__images--content {
+    aspect-ratio: 550/367;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: auto;
+    width: 51.5%;
+  }
+}
+
 .media__images img {
   width: 100%;
   height: 100%;
@@ -887,11 +926,17 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .media__textArea {
-    padding: 0;
-    padding-top: 2.1875rem;
+    padding: 2.1875rem 0 0;
     width: 46.3%;
     margin: 0 auto;
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .media__textArea--content {
+    width: 48.5%;
+    padding: 0.9375rem 0 0;
   }
 }
 
@@ -911,11 +956,23 @@ select::-ms-expand {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .media__mainTitle--pcLeft {
+    -moz-text-align-last: left;
+         text-align-last: left;
+  }
+}
+
+.media__mainTitle--content {
+  letter-spacing: 0.005em;
+}
+
 .media__text {
   margin-top: 27px;
   margin-top: 1.6875rem;
   font-size: 16px;
   font-size: 1rem;
+  font-weight: 400;
   text-align: left;
   line-height: 1.45;
   letter-spacing: 0.12em;
@@ -928,6 +985,12 @@ select::-ms-expand {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .media__text--content {
+    margin-top: 2.1875rem;
+  }
+}
+
 .media__button {
   margin-top: 27px;
   margin-top: 1.6875rem;
@@ -935,6 +998,49 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .media__button {
     margin-top: 3rem;
+  }
+}
+
+.page-title {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background: url(../images/top/content01.jpg) no-repeat center/cover;
+}
+@media screen and (min-width: 768px) {
+  .page-title {
+    background: url(../images/content/top_pc.jpg) center center/contain no-repeat;
+  }
+}
+
+.page-title__inner {
+  padding-top: 194px;
+  padding-top: 12.125rem;
+  padding-bottom: 190px;
+  padding-bottom: 11.875rem;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .page-title__inner {
+    padding-top: 10.5rem;
+    padding-bottom: 10.5rem;
+  }
+}
+
+.page-title__lead {
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #fff;
+  line-height: 1.448;
+}
+@media screen and (min-width: 768px) {
+  .page-title__lead {
+    font-size: 2.1875rem;
+    letter-spacing: 0.05714286em;
+    line-height: 1;
+    text-indent: 0.6em;
   }
 }
 
@@ -1671,6 +1777,88 @@ select::-ms-expand {
     margin-top: 2.5625rem;
     background: -webkit-gradient(linear, left top, right top, from(#333), color-stop(calc(50% + 16rem)), to(transparent));
     background: linear-gradient(90deg, #333 0%, calc(50% + 16rem), transparent calc(50% + 16rem) 100%);
+  }
+}
+
+.philosophy__layout {
+  margin-top: 85px;
+  margin-top: 5.3125rem;
+}
+@media screen and (min-width: 768px) {
+  .philosophy__layout {
+    margin-top: 4.375rem;
+  }
+}
+
+.philosophy {
+  position: relative;
+}
+
+.philosophy__title {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.448;
+  letter-spacing: 0.05em;
+  color: #fff;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .philosophy__title {
+    font-size: 1.5625rem;
+    letter-spacing: 0.0014em;
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+  }
+}
+
+.philosophy__textBlock {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  color: #fff;
+}
+
+.philosophy__text {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.448125;
+  letter-spacing: 0.125em;
+}
+@media screen and (min-width: 768px) {
+  .philosophy__text {
+    line-height: 2.1875;
+    text-align: center;
+  }
+}
+
+.philosophy1__layout {
+  margin-top: 86px;
+  margin-top: 5.375rem;
+}
+@media screen and (min-width: 768px) {
+  .philosophy1__layout {
+    margin-top: 9.375rem;
+  }
+}
+
+.philosophy2__layout {
+  margin-top: 35px;
+  margin-top: 2.1875rem;
+}
+@media screen and (min-width: 768px) {
+  .philosophy2__layout {
+    margin-top: 6.5625rem;
+  }
+}
+
+.philosophy3__layout {
+  margin-top: 35px;
+  margin-top: 2.1875rem;
+}
+@media screen and (min-width: 768px) {
+  .philosophy3__layout {
+    margin-top: 6.5625rem;
   }
 }
 
