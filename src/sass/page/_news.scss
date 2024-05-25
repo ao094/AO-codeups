@@ -1,16 +1,6 @@
 @use 'global'as *;
 
-.news__layout {
-  margin-top: rem(17);
-
-  @include mq(md) {
-    margin-top: rem(30);
-  }
-}
-
 .news__inner {
-  width: 100%;
-
   @include mq(md) {
     max-width: rem(1094); //よしな値
     width: 100%;
@@ -64,7 +54,7 @@
 }
 
 .news__block {
-  margin-top: rem(8);
+  margin-top: rem(15);
 
   @include mq(md) {
     margin-top: 0;
@@ -102,21 +92,12 @@
   transform: scale(1, 1);
 }
 
-.news__smallButton {
-  margin-top: rem(12);
+.news__button {
+  margin-top: rem(30);
   text-align: center;
 
   @include mq(md) {
     margin-top: rem(2);
     margin-left: rem(48);
-  }
-}
-
-.news__button {
-  margin-top: rem(10);
-  text-align: center;
-
-  @include mq(md) {
-    margin-top: rem(0);
   }
 }

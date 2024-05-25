@@ -11,7 +11,7 @@
   <meta name="description" content="CodeUpsの課題ページです。" />
   <meta name="keywords" content="" />
   <!-- ogp -->
-  <meta property="og:title"  content="CodeUps" />
+  <meta property="og:title" content="CodeUps" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="" />
   <meta property="og:image" content="images/top/content01.jpg" />
@@ -35,7 +35,7 @@
 
 <body>
   <!-- ヘッダー -->
-  <header class="header__layout header js-header">
+  <header class="header-layout header js-header">
     <div class="header__inner">
       <h1 class="header__logo">
         <a href="#" class="header__link">
@@ -69,10 +69,10 @@
   <main>
     <!-- メインビュー -->
     <section class="mainView">
-      <h2 class="mainView__titles">
-        <span class="mainView__mainTitle">メインタイトルが入ります</span>
-        <span class="mainView__subTitle">サブタイトルが入ります</span>
-      </h2>
+      <hgroup class="mainView__titles">
+        <h2 class="mainView__mainTitle">メインタイトルが入ります</h2>
+        <p class="mainView__subTitle">サブタイトルが入ります</p>
+      </hgroup>
       <div class="mainView__swiper-container swiper-container js-mainViewSwiper">
         <div class="mainView__swiper-wrapper swiper-wrapper">
           <div class="mainView__swiper-slide swiper-slide">
@@ -96,7 +96,7 @@
     </section>
     <!-- メインビュー -->
     <!-- お知らせ -->
-    <section class="news news__layout">
+    <section class="news news-layout">
       <div class="news__inner inner">
         <div class="news__contents">
           <div class="news__content">
@@ -104,14 +104,11 @@
               <time class="news__date" datetime="2021-11-18">2020.07.20</time>
               <span class="news__category">お知らせ</span>
             </div>
-            <h2 class="news__block">
+            <p class="news__block">
               <a href="#" class="news__text">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</a>
-            </h2>
-            <div class="news__smallButton smallButton u-desktop">
-              <a href="" class="smallButton__link"><span>すべて見る</span></a>
-            </div>
-            <div class="news__button button u-mobile">
-              <a href="" class="button__link button__animation"><span>すべて見る</span></a>
+            </p>
+            <div class="news__button">
+              <a href="" class="button button--news"><span>すべて見る</span></a>
             </div>
           </div>
         </div>
@@ -119,7 +116,7 @@
     </section>
     <!-- お知らせ -->
     <!-- 事業内容 -->
-    <section class="content content__layout">
+    <section class="content content-layout">
       <div class="content__section-title section-title">
         <h2 class="section-title__main">事業内容</h2>
         <h2 class="section-title__sub">Content</h2>
@@ -147,35 +144,35 @@
     </section>
     <!-- 事業内容 -->
     <!-- 制作実績 -->
-    <section class="works works__layout">
+    <section class="works works-layout">
       <div class="works__section-title section-title">
         <h2 class="section-title__main">制作実績</h2>
         <h2 class="section-title__sub section-title__sub--reverse">Works</h2>
       </div>
-      <div class="works__wrapper works__background">
+      <div class="works__wrapper">
         <div class="works__inner inner works__media media">
           <div class="media__images">
-            <div class="works__swiper-container swiper-container">
-              <div class="works__swiper swiper js-topWorksSwiper">
-                <div class="works__swiper-wrapper swiper-wrapper">
-                  <div class="works__swiper-slide swiper-slide">
+            <div class="media__swiper-container swiper-container">
+              <div class="media__swiper swiper js-topWorksSwiper">
+                <div class="media__swiper-wrapper swiper-wrapper">
+                  <div class="media__swiper-slide swiper-slide">
                     <div class="slide-img">
                       <img src="images/top/works01.jpg" alt="制作実績1">
                     </div>
                   </div>
-                  <div class="works__swiper-slide swiper-slide">
+                  <div class="media__swiper-slide swiper-slide">
                     <div class="slide-img">
                       <img src="images/top/works02.jpg" alt="制作実績2">
                     </div>
                   </div>
-                  <div class="works__swiper-slide swiper-slide">
+                  <div class="media__swiper-slide swiper-slide">
                     <div class="slide-img">
                       <img src="images/top/works03.jpg" alt="制作実績3">
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="works__swiper-pagination swiper-pagination"></div>
+              <div class="media__swiper-pagination swiper-pagination"></div>
             </div>
           </div>
           <div class="media__textArea">
@@ -183,8 +180,8 @@
             <p class="media__text">
               テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
             </p>
-            <div class="media__button button">
-              <a href="" class="button__link button__animation"><span>詳しく見る</span></a>
+            <div class="media__button">
+              <a href="" class="button"><span>詳しく見る</span></a>
             </div>
           </div>
         </div>
@@ -192,12 +189,12 @@
     </section>
     <!-- 制作実績 -->
     <!-- 企業概要 -->
-    <section class="overview overview__layout">
+    <section class="overview overview-layout">
       <div class="overview__section-title section-title">
         <h2 class="section-title__main">企業概要</h2>
-        <h2 class="section-title__sub section-title__sub--overview">Overview</h2>
+        <h2 class="section-title__sub">Overview</h2>
       </div>
-      <div class="overview__wrapper overview__background">
+      <div class="overview__wrapper">
         <div class="overview__inner inner overview__media media media--reverse">
           <div class="media__images"><img src="images/top/overview01.jpg" alt="" /></div>
           <div class="media__textArea">
@@ -205,8 +202,8 @@
             <p class="media__text">
               テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
             </p>
-            <div class="media__button button">
-              <a href="" class="button__link button__animation"><span>詳しく見る</span></a>
+            <div class="media__button">
+              <a href="" class="button"><span>詳しく見る</span></a>
             </div>
           </div>
         </div>
@@ -214,7 +211,7 @@
     </section>
     <!-- 企業概要 -->
     <!-- ブログ -->
-    <section class="blog blog__layout">
+    <section class="blog blog-layout">
       <div class="blog__section-title section-title">
         <h2 class="section-title__main">ブログ</h2>
         <h2 class="section-title__sub section-title__sub--reverse">Blog</h2>
@@ -263,14 +260,14 @@
             </div>
           </a>
         </div>
-        <div class="blog__button button">
-          <a href="" class="button__link button__animation"><span>詳しく見る</span></a>
+        <div class="blog__button">
+          <a href="" class="button"><span>詳しく見る</span></a>
         </div>
       </div>
     </section>
     <!-- ブログ -->
     <!-- お問い合わせ -->
-    <section class="contact contact__layout">
+    <section class="contact contact-layout">
       <div class="contact__inner inner">
         <div class="contact__section-title section-title">
           <h2 class="section-title__main">お問い合わせ</h2>
@@ -279,15 +276,15 @@
         <div class="contact__text-box">
           <p class="contact__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
         </div>
-        <div class="contact__button button">
-          <a href="" class="button__link button__animation"><span>お問い合わせへ</span></a>
+        <div class="contact__button">
+          <a href="" class="button"><span>お問い合わせへ</span></a>
         </div>
       </div>
     </section>
     <!-- お問い合わせ -->
   </main>
   <!-- フッター -->
-  <footer class="footer__layout footer">
+  <footer class="footer-layout footer">
     <p id="footer__page-top"><a href="#"><span class="footer__page--arrow"></span></a></p>
     <div class="footer__inner">
       <div class="footer__logo logo"><a href="#" class="logo__link"><img src="./images/common/CodeUps__logo.svg"

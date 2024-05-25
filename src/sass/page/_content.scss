@@ -22,14 +22,6 @@
   }
 }
 
-.content__layout {
-  margin-top: rem(152);
-
-  @include mq(md) {
-    margin-top: rem(193);
-  }
-}
-
 .content__wrapper {
   overflow: hidden;
   margin-top: rem(47);

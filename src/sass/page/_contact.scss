@@ -4,18 +4,6 @@
   background-color: $bg-gray;
 }
 
-.contact__layout {
-  margin-top: rem(106);
-  padding-top: rem(72);
-  padding-bottom: rem(66);
-
-  @include mq(md) {
-    margin-top: rem(143);
-    padding-top: rem(150);
-    padding-bottom: rem(143);
-  }
-}
-
 .contact__text-box {
   margin-top: rem(20);
 

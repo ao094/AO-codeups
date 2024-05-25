@@ -4,16 +4,6 @@
   background-color: $black;
 }
 
-.footer__layout {
-  padding-top: rem(48);
-  padding-bottom: rem(70);
-
-  @include mq(md) {
-    padding-top: rem(32);
-    padding-bottom: rem(16);
-  }
-}
-
 .footer__inner {
   // padding: 0 rem(120);
   padding: 0;

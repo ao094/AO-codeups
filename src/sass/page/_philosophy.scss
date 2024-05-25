@@ -1,12 +1,5 @@
 @use "global"as *;
 
-.philosophy__layout {
-  margin-top: rem(85);
-  @include mq("md"){ 
-  margin-top:  rem(70);
-  }
-}
-
 .philosophy {
   position: relative;
 }
@@ -37,7 +30,6 @@
   font-size: rem(16);
   font-weight: $regular;
   line-height: calc(23.17 / 16);
-  // letter-spacing: 0.000125em;
   letter-spacing: 0.125em;
 
   @include mq("md") {

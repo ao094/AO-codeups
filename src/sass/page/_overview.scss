@@ -22,25 +22,12 @@
   }
 }
 
-.overview__layout {
-  margin-top: rem(126);
-
-  @include mq(md) {
-    margin-top: rem(206);
-  }
-}
-
 .overview__wrapper {
   overflow: hidden;
-  max-width: 100%;
-}
-
-.overview__background {
-  // margin: rem(44) calc(50% - 50vw) 0;
   margin: rem(51) calc(50% - 50vw) 0;
   width: 100vw;
   background: linear-gradient(180deg, transparent 0% 30%, $black2 30% 100%);
-
+  
   @include mq(md) {
     padding: rem(80) 0 rem(86);
     margin-top: rem(41);
