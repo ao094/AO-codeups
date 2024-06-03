@@ -25,12 +25,12 @@
 .overview__wrapper {
   overflow: hidden;
   margin: rem(51) calc(50% - 50vw) 0;
-  width: 100vw;
+  width: 100%;
   background: linear-gradient(180deg, transparent 0% 30%, $black2 30% 100%);
-  
+
   @include mq(md) {
     padding: rem(80) 0 rem(86);
-    margin-top: rem(41);
+    margin: rem(41) auto;
     background: linear-gradient(90deg, $black2 0%, calc(50% + 16rem), transparent calc(50% + 16rem) 100%);
   }
 }
