@@ -1146,13 +1146,14 @@ select::-ms-expand {
 
 .page-title {
   position: relative;
+  margin: 0 auto 0;
   z-index: 1;
   overflow: hidden;
   background: url(../images/top/content01.jpg) no-repeat center/cover;
 }
 @media screen and (min-width: 768px) {
   .page-title {
-    background: url(../images/content/top_pc.jpg) center center/contain no-repeat;
+    background: url(../images/content/top_pc.jpg) center center/cover no-repeat;
   }
 }
 
