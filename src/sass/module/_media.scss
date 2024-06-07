@@ -62,6 +62,7 @@
 }
 
 .media__textArea--content {
+  padding:  rem(30)  rem(20)  rem(15);
   @include mq("md"){ 
     width: 48.5%;
     padding:  rem(15) 0 0;
@@ -74,7 +75,7 @@
   font-weight: $regular;
   line-height: 1;
   letter-spacing: 0.1em;
-  text-indent: 1em;
+  // text-indent: 1em;
 
   @include mq(md) {
     font-size: rem(25);
@@ -87,10 +88,6 @@
   @include mq("md"){ 
   text-align-last: left;
   }
-}
-
-.media__mainTitle--content {
-  letter-spacing: .005em;
 }
 
 .media__text {
