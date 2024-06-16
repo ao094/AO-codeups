@@ -2,6 +2,12 @@
 
 .contact {
   background-color: $bg-gray;
+  padding-top: rem(72);
+  padding-bottom: rem(66);
+  @include mq(md) {
+    padding-top: rem(150);
+    padding-bottom: rem(143);
+  }
 }
 
 .contact__text-box {

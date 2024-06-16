@@ -44,7 +44,7 @@
 
 }
 
-#footer__page-top a {
+#js-pageTop a {
 	display: flex;
 	justify-content:center;
 	align-items:center;
@@ -58,11 +58,11 @@
   
 }
 
-#footer__page-top a:hover{
+#js-pageTop a:hover{
 	background: $black2;
 }
 
-#footer__page-top {
+#js-pageTop {
 	position: fixed;
 	right: rem(20);
 	bottom: rem(52);
@@ -76,7 +76,7 @@
   }
 }
 
-#footer__page-top.UpMove{
+#js-pageTop.UpMove{
 	animation: UpAnime 0.5s forwards;
 }
 @keyframes UpAnime{
@@ -90,7 +90,7 @@
   }
 }
 
-#footer__page-top.DownMove{
+#js-pageTop.DownMove{
 	animation: DownAnime 0.5s forwards;
 }
 @keyframes DownAnime{
@@ -113,7 +113,7 @@
 
 }
 
-#footer__page-top a:hover .footer__page--arrow {
+#js-pageTop a:hover .footer__page--arrow {
   border-top: rem(2) solid $white;
   border-right: rem(2) solid $white;
 }
